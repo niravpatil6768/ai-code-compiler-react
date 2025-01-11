@@ -14,7 +14,7 @@ import { createClient } from "@liveblocks/client";
 
 // Initialize Liveblocks client
 const client = createClient({
-  publicApiKey: "YOUR_LIVEBLOCKS_PUBLIC_KEY", // Replace with your key
+  publicApiKey: "pk_dev_eZFmL40jLyljMCvLPjq9dp_AYG2qxhMjMFPz0OOoGLQ4AwQN6OrD_IE2qww0c6zC", // Replace with your key
 });
 
 // Create a wrapper component to handle Liveblocks room functionality
