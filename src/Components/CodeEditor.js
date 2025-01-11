@@ -111,7 +111,7 @@ const CodeEditorWithLive = ({ code, setCode, selectedLanguage, question }) => {
         onChange={(value) => {
           setCode(value);
           // Update storage when code changes
-          storage.set("code", value);
+          Storage.set("code", value);
         }}
         style={{ fontSize: "14px" }}
       />
