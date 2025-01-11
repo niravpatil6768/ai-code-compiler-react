@@ -27,7 +27,6 @@ const LiveCodeEditor = (props) => {
 const CodeEditorWithLive = ({ code, setCode, selectedLanguage, question }) => {
   const [output, setOutput] = useState("");
   const [isChecking, setIsChecking] = useState(false);
-  const dispatch = useDispatch();
 
   const { currentQuestion } = useSelector((state) => state.question);
 
@@ -36,7 +35,7 @@ const CodeEditorWithLive = ({ code, setCode, selectedLanguage, question }) => {
   // Liveblocks hooks
   const others = useOthers();
   const updateMyPresence = useUpdateMyPresence();
-  const storage = useStorage();
+  // const storage = useStorage();
 
   // Track users who are typing
   useEffect(() => {
