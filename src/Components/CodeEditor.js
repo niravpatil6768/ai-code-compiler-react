@@ -9,13 +9,7 @@ import {
   useOthers,
   useUpdateMyPresence,
   useStorage,
-} from "@liveblocks/react";
-import { createClient } from "@liveblocks/client";
-
-// Initialize Liveblocks client
-const client = createClient({
-  publicApiKey: "pk_dev_eZFmL40jLyljMCvLPjq9dp_AYG2qxhMjMFPz0OOoGLQ4AwQN6OrD_IE2qww0c6zC", // Replace with your key
-});
+} from "../liveblocks.config";
 
 // Create a wrapper component to handle Liveblocks room functionality
 const LiveCodeEditor = (props) => {
@@ -24,7 +18,6 @@ const LiveCodeEditor = (props) => {
       id="code-editor-room"
       initialPresence={{ cursor: null, isTyping: false }}
       initialStorage={{ code: props.code }}
-      client={client}
     >
       <CodeEditorWithLive {...props} />
     </RoomProvider>
